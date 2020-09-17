@@ -10,6 +10,7 @@ if ($conn->connect_error) {
      die("Connection to database failed: " . $conn->connect_error);
 }
 
+//db
     $flag=0;
     $name = $_GET["name"];
     $sql="SELECT * from synonames WHERE word = '$name'";
